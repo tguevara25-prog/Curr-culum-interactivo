@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Currículum web interactivo de Tània Guevara González">
+  <title>Tània Guevara González | Currículum Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <header class="hero" id="inicio">
+    <nav class="navbar container">
+      <a class="logo" href="#inicio">TG<span>.</span></a>
+      <button id="menuBtn" class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content container">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Estudiante · Desarrollo web</p>
+        <h1>Tània<br><span>Guevara</span><br>González</h1>
+        <p class="intro">
+          Estudiante de Estudios Ingleses en la Universitat de Barcelona y en formación
+          especializada en desarrollo web.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contacto">Contactar</a>
+          <a class="btn btn-secondary" href="#proyectos">Ver proyectos</a>
+          <button class="btn btn-secondary" id="printBtn">Imprimir CV</button>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal">
+        <div class="code-window">
+          <div class="window-bar"><i></i><i></i><i></i></div>
+          <pre><code><span class="keyword">const</span> tania = {
+  perfil: <span class="string">"Desarrollo web"</span>,
+  html: <span class="boolean">true</span>,
+  css: <span class="boolean">true</span>,
+  javascript: <span class="boolean">true</span>,
+  wordpress: <span class="boolean">true</span>,
+  disponible: <span class="boolean">true</span>
+};</code></pre>
+        </div>
+        <div class="status">
+          <span class="status-dot"></span>
+          <span id="availabilityText">Disponible para aprender y crecer profesionalmente</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="perfil" class="section">
+      <div class="container reveal">
+        <p class="eyebrow">01 · Perfil</p>
+        <h2>Quién soy</h2>
+        <div class="profile-grid">
+          <article class="card large">
+            <p>
+              Cuento con el Certificado de Profesionalidad de Confección y Publicación
+              de Páginas Web (IFCD0110), actualmente en curso, con formación práctica
+              en HTML, CSS y JavaScript, desarrollo y publicación de páginas web,
+              usabilidad, accesibilidad web y gestión de contenidos con WordPress.
+            </p>
+            <p>
+              Persona creativa, organizada y con gran capacidad de aprendizaje,
+              interesada en iniciar su carrera profesional en el ámbito del desarrollo
+              web y las tecnologías digitales.
+            </p>
+          </article>
+
+          <aside class="card stats-card">
+            <div><strong>HTML</strong><span>Web</span></div>
+            <div><strong>CSS</strong><span>Diseño</span></div>
+            <div><strong>JS</strong><span>Interacción</span></div>
+            <div><strong>B2</strong><span>Inglés</span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacion" class="section alt">
+      <div class="container reveal">
+        <p class="eyebrow">02 · Formación</p>
+        <h2>Estudios</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="date">2026 · En curso</span>
+            <h3>Grado en Estudios Ingleses</h3>
+            <p>Universitat de Barcelona</p>
+          </article>
+          <article class="timeline-item">
+            <span class="date">2026 · 460 horas · En curso</span>
+            <h3>Certificado de Profesionalidad de Confección y Publicación de Páginas Web (IFCD0110)</h3>
+            <p>Centre d'Estudis Politècnics / Servei d'Ocupació de Catalunya (SOC)</p>
+            <div class="tags">
+              <button class="skill-tag" data-skill="html">HTML</button>
+              <button class="skill-tag" data-skill="css">CSS</button>
+              <button class="skill-tag" data-skill="javascript">JavaScript</button>
+              <button class="skill-tag" data-skill="wordpress">WordPress</button>
+              <button class="skill-tag" data-skill="usabilidad">Usabilidad</button>
+              <button class="skill-tag" data-skill="accesibilidad">Accesibilidad W3C</button>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="date">2023 – 2025</span>
+            <h3>Bachillerato de Humanidades y Ciencias Sociales</h3>
+            <p>Centre Sagrada Família — Tortosa, Tarragona</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container reveal">
+        <p class="eyebrow">03 · Conocimientos</p>
+        <h2>Lo que sé hacer</h2>
+
+        <div class="skills-layout">
+          <div class="skills-list">
+            <button class="skill-card active" data-skill="html">
+              <span>01</span><strong>HTML</strong><small>Estructura web</small>
+            </button>
+            <button class="skill-card" data-skill="css">
+              <span>02</span><strong>CSS</strong><small>Diseño y maquetación</small>
+            </button>
+            <button class="skill-card" data-skill="javascript">
+              <span>03</span><strong>JavaScript</strong><small>Interactividad</small>
+            </button>
+            <button class="skill-card" data-skill="wordpress">
+              <span>04</span><strong>WordPress</strong><small>Gestión de contenidos</small>
+            </button>
+          </div>
+
+          <div class="skill-detail card">
+            <p class="detail-label">CONOCIMIENTO SELECCIONADO</p>
+            <h3 id="skillTitle">HTML</h3>
+            <p id="skillDescription">Estructuración y creación de contenido web.</p>
+            <div class="progress"><span id="skillProgress"></span></div>
+            <p id="skillExtra" class="muted">Base para construir páginas web accesibles y bien estructuradas.</p>
+          </div>
+        </div>
+
+        <div class="tags all-skills">
+          <span class="tag">HTML</span><span class="tag">CSS</span>
+          <span class="tag">JavaScript</span><span class="tag">WordPress</span>
+          <span class="tag">Desarrollo web</span><span class="tag">Diseño y maquetación web</span>
+          <span class="tag">Publicación web</span><span class="tag">Usabilidad web</span>
+          <span class="tag">Accesibilidad web</span><span class="tag">Estándares W3C</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section alt">
+      <div class="container reveal">
+        <p class="eyebrow">04 · Proyectos / práctica</p>
+        <h2>Áreas de desarrollo</h2>
+        <p class="section-note">
+          A lo largo de mi formación he ido desarrollando conocimientos en diferentes áreas del desarrollo web,
+          especialmente en HTML, CSS y JavaScript. Me interesa seguir poniendo en práctica estos conocimientos mediante
+          nuevos proyectos, mejorar mis habilidades y adquirir experiencia en entornos profesionales.
+        </p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <span>01</span>
+            <h3>Página web responsive</h3>
+            <p>Diseño y maquetación de una interfaz adaptable a móvil, tablet y escritorio.</p>
+            <button class="details-btn" data-project="responsive">Ver detalle</button>
+          </article>
+          <article class="project-card">
+            <span>02</span>
+            <h3>Interactividad con JavaScript</h3>
+            <p>Componentes interactivos para mejorar la utilidad y navegación de una web.</p>
+            <button class="details-btn" data-project="javascript">Ver detalle</button>
+          </article>
+          <article class="project-card">
+            <span>03</span>
+            <h3>Web accesible</h3>
+            <p>Aplicación de criterios de usabilidad, accesibilidad y estándares W3C.</p>
+            <button class="details-btn" data-project="accessibility">Ver detalle</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="idiomas" class="section">
+      <div class="container reveal">
+        <p class="eyebrow">05 · Perfil profesional</p>
+        <h2>Idiomas y competencias</h2>
+        <div class="two-col">
+          <article class="card">
+            <h3>Idiomas</h3>
+            <div class="language"><span>Español</span><b>Nativo</b></div>
+            <div class="language"><span>Catalán</span><b>Nativo</b></div>
+            <div class="language"><span>Inglés</span><b>B2 · Cambridge English</b></div>
+          </article>
+          <article class="card">
+            <h3>Competencias</h3>
+            <div class="tags">
+              <span class="tag">Aprendizaje</span><span class="tag">Creatividad</span>
+              <span class="tag">Adaptabilidad</span><span class="tag">Organización</span>
+              <span class="tag">Trabajo en equipo</span><span class="tag">Comunicación</span>
+              <span class="tag">Nuevas tecnologías</span><span class="tag">Motivación</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="certification card">
+          <div>
+            <p class="detail-label">CERTIFICACIÓN</p>
+            <h3>Cambridge English — Nivel B2</h3>
+            <p class="muted">Certificado obtenido el 17 de junio de 2023.</p>
+          </div>
+          <div class="cert-badge">B2</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div class="container reveal">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">06 · Contacto</p>
+            <h2>Hablemos</h2>
+            <p>Interesada en iniciar mi carrera profesional en desarrollo web y tecnologías digitales.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="contact-link" href="mailto:taniaguevaragz@gmail.com">taniaguevaragz@gmail.com</a>
+            <a class="contact-link" href="tel:+34613059007">613 05 90 07</a>
+            <a class="contact-link" href="https://linkedin.com/in/tània-guevara-gonzález-544533412" target="_blank"
+              rel="noopener">LinkedIn ↗</a>
+            <button class="copy-btn" data-copy="taniaguevaragz@gmail.com">Copiar email</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button id="closeModal" class="close-modal" aria-label="Cerrar">×</button>
+      <p class="eyebrow">Detalle</p>
+      <h3 id="modalTitle"></h3>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <button id="topBtn" class="top-btn" aria-label="Volver arriba">↑</button>
+
+  <footer>
+    <div class="container">© 2026 Tània Guevara González</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
