@@ -174,3 +174,26 @@ if (hour >= 9 && hour < 19) {
 } else {
   availabilityText.textContent = "Perfil disponible para nuevas oportunidades";
 }
+
+const themeBtn = $("#themeBtn");
+
+themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  const darkMode = document.body.classList.contains("dark-mode");
+
+  themeBtn.textContent = darkMode ? "☀️" : "🌙";
+
+  themeBtn.setAttribute(
+    "aria-label",
+    darkMode ? "Activar modo claro" : "Activar modo oscuro"
+  );
+
+  localStorage.setItem("darkMode", darkMode);
+});
+
+if (localStorage.getItem("darkMode") === "true") {
+  document.body.classList.add("dark-mode");
+  themeBtn.textContent = "☀️";
+  themeBtn.setAttribute("aria-label", "Activar modo claro");
+}
