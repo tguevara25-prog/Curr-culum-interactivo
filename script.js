@@ -91,7 +91,7 @@ const projectData = {
   },
   javascript: {
     title: "Interactividad con JavaScript",
-    text: "Creación de funcionalidades como navegación dinámica, botones, modales, selección de contenidos y manipulación del DOM. Este CV sirve como demostración de ese enfoque."
+    text: "Creación de funcionalidades como navegación dinámica, botones, modales, selección de contenidos y manipulación del DOM."
   },
   accessibility: {
     title: "Web accesible",
